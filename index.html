@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main_container">
+        <div class="heading_container">
+            <h1 class="heading">QuizApp</h1>
+            <div class="app"><button class="app_info">Install App</button></div>
+        </div>
+        <div class="body_container">
+            <img class="quiz_img" src="./Quiz_img.PNG">
+            <div class="info_container">
+                <h1 class="body_heading">The Ultimate Trivia Quiz</h1>
+                <hr>
+                <select id="category">
+                    <option disabled>SELECT QUIZ CATEGORY</option>
+                    <option value="0">Any Category</option><br><br>  
+                    <option value="general knowledge" selected>General Knowledge</option>
+                    <option value="books">Entertainment:Books</option>
+                    <option value="films">Entertainment:Films</option>
+                    <option value="music">Entertainment:Music</option>
+                </select>
+                <select id="no_of_qns">
+                    <option disabled>Select no.of Questions</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                </select>
+                <select id="difficulty_level">
+                    <option disabled>SELECT DIFFICULTY LEVEL</option>
+                    <option value="0">Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <select id="q_type">
+                    <option disabled>SELECT QUESTIONS TYPE</option>
+                    <option value="0">Any Type</option>
+                    <option value="multiple">Multiple Choice</option>
+                    <option value="boolean">True/False</option>
+                </select>
+                <div class="inside_info">
+                    <select class="time" id="hour">
+                        <option disabled>SELECT HOURS</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select class="time" id="minutes">
+                        <option disabled>SELECT MINUTES</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                    <select class="time" id="seconds">
+                        <option disabled>SELECT SECONDS</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                </div>
+                <hr>
+                <div id="buttons">
+                    <button class="play_now" id="btn_emg">▶</button>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="header">
+            <div class="head">
+                <h1 class="i"><b>i</b></h1>
+                <h1 id="qn_count">Question No.1 of 5</h1>
+            </div>
+            <div class="duration">
+                <p id='hr'>00</p>
+                <p id='min'>00</p>
+                <p id="sec">00</p>
+            </div>
+        </div>
+        <div id="question">
+            <h2 id="qn1">Q.In Kingdom Hearts, how many members does Organization XIII have in total?</h2>
+        </div>
+        <p class="choosing_sttmt">Please choose One of the Following Answers:</p>
+        <hr><br>    
+        <div class="options">
+            <button id="qn_opt1"><b>A.</b>12</button><br><br>
+            <button id="qn_opt2"><b>B.</b>14</button><br><br>
+            <button id="qn_opt3"><b>C.</b>13</button><br><br>
+            <button id="qn_opt4"><b>D.</b>10</button>
+        </div><br><hr><br>
+        <div style="text-align:end;"><button id="next_qn">Next <b>></b></button></div>
+    </div>
+    <div id="main2">
+        <div class="header2">
+            <button id="stats_res">Stats</button>
+            <button id="qna_res">QNA</button>
+        </div>
+        <div id="stats_data">
+            <div class="result">
+                <h1 class="result_style" id="message">Sorry, YOU FAILED!</h1>
+                <h2 class="result_style" id="grade">Grade:B</h2>
+                <h4 class="result_style" id="no_of_qnscount">Total Questions:5</h4>
+                <h4 class="result_style" id="no_of_crctans">Correct Answers:2</h4>
+                <h4 class="result_style" id="score">Your score:40%</h4>
+                <h4 class="result_style">Passing Score:60%</h4>
+                <h4 class="result_style">Time Taken:0h 0m 15s</h4>
+            </div>
+            <div class="result_buttons">
+                <div class="play_home_buttons">
+                    <button class="play_button" id="replay">🔁Play Again</button>
+                    <a href="./index.html"><button class="home_button" id="back_to_home">🏠 Back to Home</button></a>
+                </div>
+                <button class="share_button">📤</button>
+            </div>    
+        </div>
+        <div id="qna_data">
+            <table id="res_table">
+                <tr>
+                    <th>No.</th>
+                    <th>Questions</th>
+                    <th>Your Answers</th>
+                    <th>Correct Answers</th>
+                    <th>Points</th>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
