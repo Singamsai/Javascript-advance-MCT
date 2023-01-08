@@ -175,7 +175,7 @@ async function api(){
                 crctMarked.innerHTML="Correct Answers: "+`${ansCount}`;
                 let percentage = (Number)((ansCount/(counter+1))*100);
                 score.innerHTML = 'Your score: '+percentage.toFixed(0)+'%';
-                if(percentage>60){
+                if(percentage>=60){
                     message.innerHTML='Congratulations, YOU PASSED';
                     grade.innerHTML='Grade:A';
                 }else{
