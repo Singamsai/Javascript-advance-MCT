@@ -56,8 +56,7 @@ function qnfunction(){
                 minuteValue--;
                 count=60;
                 min.innerHTML= minuteValue;
-            }
-            
+            }            
         },1000)
     }
     api();
@@ -83,7 +82,7 @@ let counter =0;
 let ansCount = 0;
 let html='';
 async function api(){
-    const streamResponse = await fetch(`https://opentdb.com/api.php?amount=${noOfQn.value}&category=9&difficulty=0&type=${qnTypevalue}`)
+    const streamResponse = await fetch(`https://opentdb.com/api.php?amount=${noOfQn.value}&category=${category.value}&difficulty=${difficulty.value}&type=${qnTypevalue}`)
     const textBody = await streamResponse.text()
     const jsonData = JSON.parse(textBody);
     console.log(jsonData);
@@ -196,7 +195,5 @@ statsRes.addEventListener('click',()=>{
     qnaData.style.display='none';
     statsData.style.display='block';
 })
-let vavvvv=(Number)(8/15)*100;
-console.log(vavvvv.toFixed(0));
 
 
